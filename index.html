@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<main class="container-fluid py-5">
+        <div class="text">
+            <h1>
+                <br>
+                <center>
+                    <font size="6">Hello {{ username }}, your balance is {{ cash_available }}
+                </center>
+            </h1>
+            <a href="/transfer">
+                <center><button class="btn btn-info btn-lg">Transfer money</button></center>
+            </a>
+</main>
+
+{% endblock %}

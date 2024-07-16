@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <form action="/transfer" method="post" id="transfer">
+        <br><br>
+        <div class="mb-3" id="name">
+            Name: <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="name" placeholder="Name" required>
+        </div>
+        <div class="mb-3">
+            Account number: <input autocomplete="off" class="form-control mx-auto w-auto" id="acc_no" name="acc_no" placeholder="xxxx xxxx" type="number" required>
+        </div>
+        <div class="mb-3" id="sort_code">
+            Sort code: <input autocomplete="off" class="form-control mx-auto w-auto" name="sort_code" placeholder="xx-xx-xx" type="number" required>
+        </div>
+        <div class="mb-3" id="amount">
+            Amount: <input autocomplete="off" class="form-control mx-auto w-auto" name="amount" placeholder="Amount" type="number" required>
+        </div>
+        <button class="btn btn-primary" type="submit" id="submit">Proceed</button>
+    </form>
+{% endblock %}
